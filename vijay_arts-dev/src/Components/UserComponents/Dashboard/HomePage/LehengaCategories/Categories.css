@@ -1,0 +1,76 @@
+.cat_mainDiv {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catSubDivs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.catCard {
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+
+.catImage {
+    width: 100%;
+    height: 100%;
+}
+
+.cat_button{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+ }
+
+ .cat_button:hover{
+    background-color: green;
+    color: white;
+ }
+
+.catNavigateButton {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cat_mainDiv {
+        height: 50vh;
+    }
+
+    .catCard {
+        width: 15rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cat_mainDiv {
+        height: 40vh;
+    }
+
+    .catCard {
+        width: 12rem;
+        height: 18rem;
+    }
+}
