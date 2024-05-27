@@ -9,7 +9,7 @@ const App = () => {
   return (
 
     <>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route exact path='/*' element={<MainRoutes />} />
       </Routes>
