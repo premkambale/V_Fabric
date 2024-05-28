@@ -3,14 +3,12 @@ import "./Trending.css"
 
 const Trending = () => {
   return (
-    <div>
-        
+    <div className="trendingHeader">
+      <div className="line"></div>
+      <span className="headerText">TRENDING</span>
+      <div className="line"></div>
+      <span className="subHeaderText">Top view in this week</span>
     </div>
-    // <div className='trending_MainDiv'>
-    //   <div className="trendingHeader">
-    //     Trending this week
-    //   </div>
-    // </div>
   )
 }
 

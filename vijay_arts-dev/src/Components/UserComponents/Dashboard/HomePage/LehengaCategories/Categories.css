@@ -2,10 +2,10 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .catSubDivs {
@@ -20,28 +20,39 @@
 .catCard {
     width: 20rem;
     height: 25rem;
-    border: 1px solid;
-    border-radius: 10px;
+    border-radius: 20px;
     box-sizing: border-box;
     margin: 0 10px;
+    overflow: hidden;
 }
+
 
 .catImage {
     width: 100%;
+    border-radius: 20px;
     height: 100%;
+    transition: all ease-in-out 0.3s;
 }
 
-.cat_button{
+.catImage:hover {
+    transform: scale(1.04);
+}
+
+.cat_button {
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
- }
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+    border: none;
+}
 
- .cat_button:hover{
-    background-color: green;
+.cat_button:hover {
+    background-color: #171717;
     color: white;
- }
+    cursor: pointer;
+}
 
 .catNavigateButton {
     position: absolute;
@@ -56,12 +67,15 @@
 @media (max-width: 768px) {
     .cat_mainDiv {
         height: 50vh;
+        display: inline;
     }
 
     .catCard {
         width: 15rem;
         height: 20rem;
     }
+
+
 }
 
 @media (max-width: 480px) {
