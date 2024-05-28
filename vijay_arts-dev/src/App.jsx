@@ -4,6 +4,7 @@ import Header from '../src/Components/CommonComponents/Header/Header'
 import './App.css'
 import MainRoutes from './Components/Main/MainRoutes'
 import Collection from './Components/UserComponents/Dashboard/Collections/CollectionDashboard/Collection'
+import Footer from './Components/CommonComponents/Footer/Footer'
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <Routes>
         <Route exact path='/*' element={<MainRoutes />} />
       </Routes>
-
+      <Footer />
     </>
 
   )
