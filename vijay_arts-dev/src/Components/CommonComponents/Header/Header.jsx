@@ -8,6 +8,7 @@ import { LuUser } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
@@ -41,7 +42,9 @@ const Header = () => {
                 </div>
                 <div className="collection-list">
                     <ul>
-                        <li>New Arrivals</li>
+                        <NavLink to='/newArrival' style={{ textDecoration: 'none', color: "black" }}>
+                            <li>New Arrivals</li>
+                        </NavLink>
                         <li className='collectionListInner'>
                             <span>Trendy</span>
                             Hot Selling

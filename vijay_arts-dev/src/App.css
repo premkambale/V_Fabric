@@ -1,8 +1,9 @@
 :root {
     --mediumFont: 10pt;
     --fontColor: #e91e63;
-    --gray-color:#878787;
+    --gray-color: #878787;
 
     --smallFont: 9pt;
     --extraSmallFont: 8pt;
+    --orangeColor: #ff4e00
 }

@@ -1,7 +1,10 @@
 .header-container {
+    top: 0;
+    position: sticky;
     height: 15vh;
     background-color: white;
     width: 100%;
+    z-index: 99;
 }
 
 .top-container {
@@ -89,6 +92,12 @@
 .collection-list ul li {
     list-style-type: none;
     padding: 0px 5px;
+    cursor: pointer;
+}
+
+.collection-list ul li:hover {
+    color: var(--fontColor);
+    transition: 1s ease all;
 }
 
 .headerContaiener .rightSideNavigateIcons {
