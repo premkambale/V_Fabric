@@ -8,6 +8,9 @@ import Wishlist from '../UserComponents/Wishlist/Wishlist'
 import Carts from '../UserComponents/Carts/Carts'
 import Profile from '../CommonComponents/Profile/Profile'
 import NewArrivals from '../UserComponents/Dashboard/Collections/NewArrivals/NewArrivals'
+import HotSelling from '../UserComponents/Dashboard/Collections/HotSellings/HotSelling'
+import LehengaCholi from '../UserComponents/Dashboard/Collections/LehengaCholi/LehengaCholi'
+import Sale from '../UserComponents/Dashboard/Collections/Sale/Sale'
 const MainRoutes = () => {
     return (
         <>
@@ -17,6 +20,9 @@ const MainRoutes = () => {
                 <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/collections' element={<Collection />} />
                 <Route path='/newArrivals' element={<NewArrivals />} />
+                <Route path='/hotselling' element={<HotSelling />} />
+                <Route path='/lehengacholi' element={<LehengaCholi />} />
+                <Route path='/sale' element={<Sale />} />
                 <Route path='/wishlist' element={<Wishlist />} />
                 <Route path='/cart' element={<Carts />} />
                 <Route path='/profile' element={<Profile />} />

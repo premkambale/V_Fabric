@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Header.css'
 import { IoCallOutline, IoSearchOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
@@ -6,9 +6,12 @@ import logo from '../../../assets/logo.svg'
 import { LuUser } from "react-icons/lu";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { useNavigate, NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
     const navigate = useNavigate();
+    const location = useLocation()
+    const path = location.pathname;
 
     const navigationHandler = (navigationPath) => {
         navigate(`/main/${navigationPath}`)
@@ -38,18 +41,24 @@ const Header = () => {
                 <div className="collection-list">
                     <ul>
                         <NavLink to='/main/newArrivals' style={{ textDecoration: 'none', color: "black" }}>
-                            <li>New Arrivals</li>
+                            <li style={{ color: path.includes('/main/newArrivals') ? '#e91e63' : 'black' }} >New Arrivals</li>
                         </NavLink>
-                        <li className='collectionListInner'>
-                            <span>Trendy</span>
-                            Hot Selling
-                        </li>
-                        <li>Lehenga Choli</li>
+                        <NavLink to='/main/hotselling' style={{ textDecoration: 'none', color: "black" }} >
+                            <li className='collectionListInner' style={{ color: path.includes('/main/hotselling') ? '#e91e63' : 'black' }}>
+                                <span>Trendy</span>
+                                Hot Selling
+                            </li>
+                        </NavLink>
+                        <NavLink to='/main/lehengacholi' style={{ textDecoration: 'none', color: "black" }}  >
+                            <li style={{ color: path.includes('/main/lehengacholi') ? '#e91e63' : 'black' }}>Lehenga Choli</li>
+                        </NavLink>
                         <li>Bridal Lehenga</li>
-                        <li className='collectionListInner'>
-                            <span className='saleBackground'>Sale</span>
-                            Sale
-                        </li>
+                        <NavLink to='/main/sale' style={{ textDecoration: 'none', color: "black" }} >
+                            <li className='collectionListInner' style={{ color: path.includes('/main/sale') ? '#e91e63' : 'black' }}>
+                                <span className='saleBackground'>Sale</span>
+                                Sale
+                            </li>
+                        </NavLink>
                     </ul>
                 </div>
                 <div className='rightSideNavigateIcons'>

@@ -10,7 +10,7 @@ import loaderImg from '../../../../../../src/assets/loader.svg'
 import Modal from 'react-modal';
 import { MdFavoriteBorder } from "react-icons/md";
 import { SiTicktick } from "react-icons/si";
-
+import { RiCloseLine } from "react-icons/ri";
 
 const NewArrivals = () => {
 
@@ -191,10 +191,10 @@ const NewArrivals = () => {
                                     {
                                         newArrivalsData?.map((item) => {
                                             return <>
-                                                <div className='productContainer' onClick={() => openModal()}>
+                                                <div className='productContainer' >
                                                     <img src={item.img} alt="error" />
                                                     <div className="product-hover-btn">
-                                                        <button className='quickview-btn color'>Quick view</button>
+                                                        <button className='quickview-btn color' onClick={() => openModal()}>Quick view</button>
                                                         <button className='addtocart-btn'>Add to cart</button>
                                                     </div>
                                                     <div className='discount-banner'>
@@ -256,6 +256,9 @@ const NewArrivals = () => {
                 contentLabel="Example Modal"
             >
                 <div className="productDetail-modal">
+                    <div className="closeBtn" onClick={closeModal}>
+                        <RiCloseLine color='white' size={20} />
+                    </div>
                     <div className="productImg">
                         <img src={product} alt="" />
                     </div>
