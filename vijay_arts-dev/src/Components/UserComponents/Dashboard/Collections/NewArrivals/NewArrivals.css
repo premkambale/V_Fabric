@@ -369,9 +369,26 @@
 .productDetails {
     height: 100%;
     width: 60%;
-    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    overflow-y: auto;
+
 }
 
+.productDetails::-webkit-scrollbar {
+    width: 1px;
+}
+
+.productDetails::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(39, 153, 19, 0.3);
+}
+
+.productDetails::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
 
 .productDetails .product-info-container {
     width: 100%;
@@ -397,4 +414,104 @@
 
 .productDetail-modal .product-desc p {
     line-height: 20px;
+}
+
+.productDetail-modal .addtocart-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.productDetail-modal .addtocart-container .qty-div {
+    width: 25%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.productDetail-modal .addtocart-container .qty-div span {
+    font-size: 15pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.productDetail-modal .addtocart-container .add-cart-btn {
+    width: 50%;
+}
+
+.productDetail-modal .addtocart-container .add-cart-btn button {
+    border-radius: 20px;
+    padding: 8px 10px;
+    width: 100%;
+    background-color: var(--fontColor);
+    border: none;
+    color: white;
+}
+
+.favoruite-icons {
+    width: 25%;
+}
+
+.productDetail-modal .addtocart-container .favoruite-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.productDetail-modal .addtocart-container .favoruite-icons .border-favorite {
+    border: 1px solid;
+    height: 35px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productDetail-modal .productDetails .buynow-container button {
+    padding: 10px;
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.productDetail-modal .productDetails .buynow-container button:hover {
+    background-color: var(--fontColor);
+    transition: 1s ease all;
+}
+
+.productDetail-modal .ask-question-div {
+    font-family: var(--fontFamily);
+
+}
+
+.productDetail-modal .ask-label-contaienr {
+    font-size: var(--normalFont);
+}
+
+.qusestion-container .label-qty {
+    font-size: var(--normalFont);
+    font-family: var(--fontFamily);
+    color: gray;
+}
+
+.qusestion-container {
+    margin-top: 10px;
+}
+
+.ask-question-div .qusestion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ask-question-div .qusestion-container span {
+    color: #222222;
 }

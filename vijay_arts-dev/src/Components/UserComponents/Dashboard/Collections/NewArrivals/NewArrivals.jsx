@@ -8,6 +8,9 @@ import { FaAngleDown } from "react-icons/fa6";
 import product from '../../../../../assets/product.png'
 import loaderImg from '../../../../../../src/assets/loader.svg'
 import Modal from 'react-modal';
+import { MdFavoriteBorder } from "react-icons/md";
+import { SiTicktick } from "react-icons/si";
+
 
 const NewArrivals = () => {
 
@@ -269,10 +272,44 @@ const NewArrivals = () => {
                                 <p>Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...</p>
                             </div>
                         </div>
+                        <div className="addtocart-container">
+                            <div className="qty-div">
+                                <span>-</span>
+                                <p>0</p>
+                                <span>+</span>
+                            </div>
+                            <div className="add-cart-btn">
+                                <button>ADD TO CART</button>
+                            </div>
+                            <div className="favoruite-icons">
+                                <div className="border-favorite">
+                                    <MdFavoriteBorder size={20} />
+                                </div>
+                                <div className="border-favorite">
+                                    <SiTicktick />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="buynow-container">
+                            <button>BUY IT NOW</button>
+                        </div>
+                        <div className="ask-question-div">
+                            <div className="ask-label-contaienr">
+                                <p>Ask a Question</p>
+                            </div>
+                            <div className="qusestion-container">
+                                <p className='label-qty'>SKY: <span>BL1399_Purple</span></p>
+                                <p className='label-qty'>Availability : <span>In Stock</span></p>
+                                <p className='label-qty'>Categories:<span> Best Seller </span> <span>Bridal Collection</span>  <span>Bridal Lehenga</span> <span>LEHENGA CHOLI </span><span>Sequence Lehenga Choli</span><span> Special Wedding & Party wear Collection</span> <span>Trending Lehenga Collection</span></p>
+                                <p className='label-qty'>Tags: <span>Bridal Lehenga Choli </span> <span>Designer Collection</span>  <span>Embroidery Lehenga choli</span> <span>
+                                    Party wear lehenga choli </span>  </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </Modal>
-        </div>
+            </Modal >
+        </div >
 
     )
 }
