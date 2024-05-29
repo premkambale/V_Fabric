@@ -38,10 +38,10 @@ const Footer = () => {
     return (
         <div className="footer-main-container">
             <div className="footer-utility-container footer-regular-height">
-                {utility.map((item) => {
+                {utility.map((item,index) => {
                     const Component = item.utilityLogo;
                     return (
-                        <div className="utility-container">
+                        <div className={`utility-container utility-item-${index+1}`}>
                             <div className="utility-logo">
                                 <Component fontSize={28} fill='#e91e63' />
                             </div>
@@ -133,7 +133,7 @@ const Footer = () => {
                         <div className="b-footer-email">
                             <IoCallOutline /><span>contact@blfabric.com</span>
                         </div>
-                        <div className="b-footer-social-media">
+                        <div className="b-footer-social-media b-footer-2">
                             <div className="b-footer-svg"><BiLogoMastercard/></div>
                             <div className="b-footer-svg"><FaApplePay/></div>
                             <div className="b-footer-svg"><RiVisaLine  /></div>
