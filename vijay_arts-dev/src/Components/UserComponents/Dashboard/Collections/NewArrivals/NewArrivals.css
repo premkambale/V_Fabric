@@ -216,7 +216,7 @@
     gap: 10px;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -375,4 +375,26 @@
 
 .productDetails .product-info-container {
     width: 100%;
+}
+
+
+.productDetails .product-info-container .productLabelContainer p {
+    font-weight: bold;
+    font-size: var(--normalFont);
+    font-family: var(--fontFamily);
+    font-weight: 600;
+}
+
+.productDetails .product-info-container .productLabelContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productDetails .product-info-container .productLabelContainer .priceBox span {
+    font-size: 12pt;
+}
+
+.productDetail-modal .product-desc p {
+    line-height: 20px;
 }

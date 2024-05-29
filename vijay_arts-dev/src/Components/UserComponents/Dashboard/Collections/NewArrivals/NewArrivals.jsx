@@ -259,8 +259,7 @@ const NewArrivals = () => {
                     <div className="productDetails">
                         <div className="product-info-container">
                             <div className='productLabelContainer'>
-                                <span className='productLabel'></span>
-                                <p>'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400'</p>
+                                <p>Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400</p>
                                 <div className='priceBox'>
                                     <span className=''>MRP.10, 999</span>
                                     <span className='discountPrice'>Rs.1000</span>
@@ -269,10 +268,6 @@ const NewArrivals = () => {
                             <div className='product-desc'>
                                 <p>Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...</p>
                             </div>
-                        </div>
-                        <div className="product-actionbtns">
-                            <button className='quickview-btn'>Quick view</button>
-                            <button className='addtocart-btn'>Add to cart</button>
                         </div>
                     </div>
                 </div>
