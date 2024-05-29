@@ -1,23 +1,18 @@
 import React from 'react'
 import './Header.css'
-import { IoCallOutline } from "react-icons/io5";
+import { IoCallOutline, IoSearchOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import logo from '../../../assets/logo.svg'
-import { IoSearchOutline } from "react-icons/io5";
 import { LuUser } from "react-icons/lu";
-import { CiHeart } from "react-icons/ci";
-import { CiShoppingCart } from "react-icons/ci";
-import { useNavigate } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { CiHeart, CiShoppingCart } from "react-icons/ci";
+import { useNavigate, NavLink } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate();
 
-    const navigation = useNavigate();
     const navigationHandler = (navigationPath) => {
-        const navigationLocation = navigationPath == 'favourite' ? '/favorite' : navigationPath == 'account' ? '/account' : navigationPath == 'cart' ? 'user/cart' : '';
-        return navigation(navigationLocation)
+        navigate(`/main/${navigationPath}`)
     }
-
 
     return (
         <div className='header-container'>
@@ -42,7 +37,7 @@ const Header = () => {
                 </div>
                 <div className="collection-list">
                     <ul>
-                        <NavLink to='/newArrival' style={{ textDecoration: 'none', color: "black" }}>
+                        <NavLink to='/main/newArrivals' style={{ textDecoration: 'none', color: "black" }}>
                             <li>New Arrivals</li>
                         </NavLink>
                         <li className='collectionListInner'>
@@ -61,10 +56,10 @@ const Header = () => {
                     <div className='searchIconDiv' >
                         <IoSearchOutline color='black' size={20} />
                     </div>
-                    <div className='accountIconDiv' onClick={() => navigationHandler('account')}>
+                    <div className='accountIconDiv' onClick={() => navigationHandler('profile')}>
                         <LuUser color='black' size={20} />
                     </div>
-                    <div className='heartIconDiv' onClick={() => navigationHandler('favourite')}>
+                    <div className='heartIconDiv' onClick={() => navigationHandler('wishlist')}>
                         <span className='counterSpanContainer'>0</span>
                         <CiHeart color='black' size={20} />
                     </div>
