@@ -2,19 +2,19 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.catSubDivs {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+}
+
+.catSubDivs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .catCard {
@@ -22,15 +22,15 @@
     height: 25rem;
     border-radius: 20px;
     box-sizing: border-box;
-    margin: 0 10px;
     overflow: hidden;
+    position: relative; 
 }
-
 
 .catImage {
     width: 100%;
-    border-radius: 20px;
     height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
     transition: all ease-in-out 0.3s;
 }
 
@@ -38,14 +38,23 @@
     transform: scale(1.04);
 }
 
-.cat_button {
+.catNavigateButton {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.cat_button {
+    width: 90%;
     padding: 12px;
+    margin: 10px auto;
     border-radius: 5px;
     background-color: white;
     transition: all ease-in-out 0.3s;
     border: none;
+    text-align: center;
 }
 
 .cat_button:hover {
@@ -54,20 +63,17 @@
     cursor: pointer;
 }
 
-.catNavigateButton {
-    position: absolute;
-    top: 70%;
-    transform: translateY(-50%);
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-}
-
 /* Responsive styles */
 @media (max-width: 768px) {
     .cat_mainDiv {
-        height: 50vh;
-        display: inline;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        gap: 10px;
+    }
+
+    .catSubDivs:nth-child(1) {
+        grid-column: 1 / 3;
     }
 
     .catCard {
@@ -75,16 +81,30 @@
         height: 20rem;
     }
 
-
+    .catNavigateButton {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
     .cat_mainDiv {
-        height: 40vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        height: auto;
     }
 
     .catCard {
         width: 12rem;
         height: 18rem;
+    }
+
+    .catNavigateButton {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
     }
 }
