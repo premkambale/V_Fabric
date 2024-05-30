@@ -1,8 +1,11 @@
 :root {
     --mediumFont: 10pt;
     --fontColor: #e91e63;
-    --gray-color:#878787;
-
-    --smallFont: 9pt;
+    --gray-color: #878787;
     --extraSmallFont: 8pt;
+    --fontFamily: "Poppins", sans-serif;
+    --mediumFontWeight: 400;
+    --smallFont: 9pt;
+    --normalFont: 10pt;
+    --orangeColor: #ff4e00
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Header from '../src/Components/CommonComponents/Header/Header'
 import './App.css'
 import MainRoutes from './Components/Main/MainRoutes'
@@ -10,11 +10,10 @@ const App = () => {
   return (
 
     <>
-      <Header />
       <Routes>
-        <Route exact path='/*' element={<MainRoutes />} />
+        <Route exact path='/' element={<MainRoutes />} />
+        <Route exact path='/main/*' element={<MainRoutes />} />
       </Routes>
-      <Footer />
     </>
 
   )
