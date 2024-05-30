@@ -7,7 +7,6 @@
 }
 
 .newArrival-container .bannerHeroContainer {
-    height: 35vh;
     background-color: #757575;
     padding: 10px;
     display: flex;
@@ -526,3 +525,5 @@
 .ask-question-div .qusestion-container span {
     color: #222222;
 }
+
+
