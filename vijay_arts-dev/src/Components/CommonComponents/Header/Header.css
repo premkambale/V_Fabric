@@ -1,7 +1,9 @@
 .header-container {
-    height: 15vh;
+    top: 0;
+    position: sticky;
     background-color: white;
     width: 100%;
+    z-index: 99;
 }
 
 .top-container {
@@ -89,6 +91,12 @@
 .collection-list ul li {
     list-style-type: none;
     padding: 0px 5px;
+    cursor: pointer;
+}
+
+.collection-list ul li:hover {
+    color: var(--fontColor);
+    transition: 1s ease all;
 }
 
 .headerContaiener .rightSideNavigateIcons {
@@ -152,4 +160,730 @@
 .heartIconDiv,
 .cartIconDiv {
     cursor: pointer;
+}
+
+.manu-top-bar {
+    display: none;
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header-container {
+        top: 0;
+        position: sticky;
+        background-color: white;
+        width: 100%;
+        z-index: 99;
+        padding: 10px;
+    }
+
+    .top-container {
+        width: 100%;
+        background-color: #f6f6f8;
+        padding: 10px;
+        display: flex;
+    }
+
+    .left-side-headerDiv {
+        width: 33%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .innerLeftSideContainer {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .innerLeftSideContainer span {
+        color: grey;
+        font-family: monospace;
+        font-size: 9pt;
+    }
+
+    .right-side-headerDiv {
+        width: 33%;
+    }
+
+    .right-side-headerDiv p {
+        font-size: 8pt;
+        color: grey;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    .right-side-headerDiv span {
+        color: black;
+        padding-left: 10px;
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+    }
+
+    .header-container .headerContaiener {
+        height: auto;
+        width: 100%;
+    }
+
+    .headerContaiener {
+        padding: 7px 10px;
+        border-bottom: 1px solid #80808033;
+        width: 100%;
+        display: flex;
+    }
+
+    .headerContaiener .logosection {
+        width: 25%;
+    }
+
+    .headerContaiener .collection-list {
+        width: 50%;
+    }
+
+    .rightSideNavigateIcons {
+        width: 25%;
+    }
+
+    .collection-list ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        text-align: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: var(--smallFont);
+    }
+
+    .collection-list ul li {
+        list-style-type: none;
+        padding: 0px 5px;
+        cursor: pointer;
+    }
+
+    .collection-list ul li:hover {
+        color: var(--fontColor);
+        transition: 1s ease all;
+    }
+
+    .headerContaiener .rightSideNavigateIcons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-end;
+    }
+
+    .right-side-headerDiv p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .right-side-headerDiv p:hover span {
+        color: var(--fontColor);
+        cursor: pointer;
+        transition: .5s ease all;
+    }
+
+    .collection-list li {
+        position: relative;
+    }
+
+
+    .collection-list .collectionListInner span {
+        color: white;
+        position: absolute;
+        top: -13px;
+        right: -10px;
+        background-color: var(--fontColor);
+        padding: 0px 5px;
+        border-radius: 10px;
+        font-size: var(--extraSmallFont);
+    }
+
+    .collection-list .collectionListInner .saleBackground {
+        background-color: #ffa800;
+    }
+
+    .heartIconDiv,
+    .cartIconDiv {
+        position: relative;
+    }
+
+    .heartIconDiv .counterSpanContainer,
+    .cartIconDiv .counterSpanContainer {
+        position: absolute;
+        background-color: black;
+        padding: 1px 5px;
+        color: white;
+        top: -13px;
+        border-radius: 50%;
+        font-size: var(--extraSmallFont);
+        right: 0;
+    }
+
+    .searchIconDiv,
+    .accountIconDiv,
+    .heartIconDiv,
+    .cartIconDiv {
+        cursor: pointer;
+    }
+}
+
+.menuBar {
+    display: none;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .menuBar {
+        display: block;
+    }
+
+    .header-container {
+        top: 0;
+        position: sticky;
+        background-color: white;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .top-container {
+        width: 100%;
+        background-color: #f6f6f8;
+        padding: 10px;
+        display: flex;
+
+    }
+
+    .left-side-headerDiv {
+        width: 33%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .innerLeftSideContainer {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .top-container:nth-child(1) {
+        display: none;
+    }
+
+    .innerLeftSideContainer span {
+        color: grey;
+        font-family: monospace;
+        font-size: 6pt;
+    }
+
+    .right-side-headerDiv {
+        width: 33%;
+    }
+
+    .right-side-headerDiv p {
+        font-size: 6pt;
+        color: grey;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    .right-side-headerDiv span {
+        color: black;
+        padding-left: 10px;
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+    }
+
+    .header-container .headerContaiener {
+        height: auto;
+        width: 100%;
+    }
+
+    .headerContaiener {
+        padding: 7px 10px;
+        border-bottom: 1px solid #80808033;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerContaiener .logosection {
+        width: 25%;
+    }
+
+    .headerContaiener .menuBar {
+        width: 25%;
+    }
+
+    .headerContaiener .collection-list,
+    .headerContaiener .Expandcollection-list {
+        width: 35%;
+    }
+
+    .rightSideNavigateIcons {
+        width: 25%;
+    }
+
+
+    .collection-list,
+    .Expandcollection-list {
+        height: 100vh;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: none;
+    }
+
+    .Expandcollection-list {
+        height: 100vh;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: block;
+        transition: 1s all ease;
+    }
+
+    .collection-list ul,
+    .Expandcollection-list ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: var(--smallFont);
+        background-color: white;
+        justify-content: start;
+    }
+
+    .collectionListInner span {
+        display: none;
+    }
+
+    .manu-top-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding: 10px;
+    }
+
+    .ClosemenuBar {
+        position: absolute;
+        right: -35px;
+        padding: 7px;
+        background-color: black;
+    }
+
+    .left-side-menu {
+        height: 100%;
+        width: 50%;
+        background-color: #E3E3E3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--fontFamily);
+        padding: 10px;
+        font-size: var(--mediumFont);
+        border: 1px solid var(--fontColor);
+    }
+
+    .right-side-menu {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--fontFamily);
+        padding: 10px;
+        font-size: var(--mediumFont);
+        background-color: #f3f3f3;
+    }
+
+    .collection-list ul li,
+    .Expandcollection-list ul li {
+        list-style-type: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.323);
+        padding: 10px;
+    }
+
+    .collection-list .list-label,
+    .Expandcollection .list-label {
+        text-align: left;
+    }
+
+    .collection-list ul li:hover,
+    .Expandcollection-list ul li:hover {
+        color: var(--fontColor);
+        transition: 1s ease all;
+    }
+
+    .headerContaiener .rightSideNavigateIcons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-end;
+    }
+
+    .right-side-headerDiv p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .right-side-headerDiv p:hover span {
+        color: var(--fontColor);
+        cursor: pointer;
+        transition: .5s ease all;
+    }
+
+    .collection-list li,
+    .Expandcollection li {
+        position: relative;
+    }
+
+
+    .collection-list .collectionListInner span,
+    .Expandcollection .collectionListInner span {
+        color: white;
+        position: absolute;
+        top: -13px;
+        right: -10px;
+        background-color: var(--fontColor);
+        padding: 0px 5px;
+        border-radius: 10px;
+        font-size: var(--extraSmallFont);
+    }
+
+    .collection-list .collectionListInner .saleBackground,
+    .Expandcollection .collectionListInner .saleBackground {
+        background-color: #ffa800;
+    }
+
+    .heartIconDiv,
+    .cartIconDiv {
+        position: relative;
+    }
+
+    .heartIconDiv .counterSpanContainer,
+    .cartIconDiv .counterSpanContainer {
+        position: absolute;
+        background-color: black;
+        padding: 1px 5px;
+        color: white;
+        top: -13px;
+        border-radius: 50%;
+        font-size: var(--extraSmallFont);
+        right: 0;
+    }
+
+    .searchIconDiv,
+    .accountIconDiv,
+    .heartIconDiv,
+    .cartIconDiv {
+        cursor: pointer;
+    }
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Small Devices (Landscape Phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .menuBar {
+        display: block;
+    }
+    .heartIconDiv,
+    .accountIconDiv {
+        display: none;
+    }
+
+    .header-container {
+        top: 0;
+        position: sticky;
+        background-color: white;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .top-container {
+        width: 100%;
+        background-color: #f6f6f8;
+        padding: 10px;
+        display: flex;
+
+    }
+
+    .left-side-headerDiv {
+        width: 33%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .innerLeftSideContainer {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .top-container:nth-child(1) {
+        display: none;
+    }
+
+    .innerLeftSideContainer span {
+        color: grey;
+        font-family: monospace;
+        font-size: 6pt;
+    }
+
+    .right-side-headerDiv {
+        width: 33%;
+    }
+
+    .right-side-headerDiv p {
+        font-size: 6pt;
+        color: grey;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    .right-side-headerDiv span {
+        color: black;
+        padding-left: 10px;
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+    }
+
+    .header-container .headerContaiener {
+        height: auto;
+        width: 100%;
+    }
+
+    .headerContaiener {
+        padding: 15px 12px;
+        border-bottom: 1px solid #80808033;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerContaiener .logosection {
+        width: 25%;
+    }
+
+    .headerContaiener .menuBar {
+        width: 25%;
+    }
+
+    .headerContaiener .collection-list,
+    .headerContaiener .Expandcollection-list {
+        width: 60%;
+    }
+
+    .rightSideNavigateIcons {
+        width: 25%;
+    }
+
+
+    .collection-list,
+    .Expandcollection-list {
+        height: 100vh;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: none;
+    }
+
+    .Expandcollection-list {
+        height: 100vh;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: block;
+        transition: 1s all ease;
+    }
+
+    .collection-list ul,
+    .Expandcollection-list ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: var(--smallFont);
+        background-color: white;
+        justify-content: start;
+    }
+
+    .collectionListInner span {
+        display: none;
+    }
+
+    .manu-top-bar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        padding: 4px 0px 10px 0px;
+    }
+
+    .ClosemenuBar {
+        position: absolute;
+        right: -32px;
+        padding: 7px;
+        background-color: black;
+    }
+
+    .left-side-menu {
+        height: 100%;
+        width: 50%;
+        background-color: #E3E3E3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--fontFamily);
+        padding: 10px;
+        font-size: var(--mediumFont);
+        border: 1px solid var(--fontColor);
+    }
+
+    .right-side-menu {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--fontFamily);
+        padding: 10px;
+        font-size: var(--mediumFont);
+        background-color: #f3f3f3;
+    }
+
+    .left-side-menu p,
+    .right-side-menu p {
+        font-size: var(--smallFont);
+    }
+
+    .collection-list ul li,
+    .Expandcollection-list ul li {
+        list-style-type: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.323);
+        padding: 10px;
+    }
+
+    .collection-list .list-label,
+    .Expandcollection .list-label {
+        text-align: left;
+    }
+
+    .collection-list ul li:hover,
+    .Expandcollection-list ul li:hover {
+        color: var(--fontColor);
+        transition: 1s ease all;
+    }
+
+    .headerContaiener .rightSideNavigateIcons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-end;
+    }
+
+    .right-side-headerDiv p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .right-side-headerDiv p:hover span {
+        color: var(--fontColor);
+        cursor: pointer;
+        transition: .5s ease all;
+    }
+
+    .collection-list li,
+    .Expandcollection li {
+        position: relative;
+    }
+
+
+    .collection-list .collectionListInner span,
+    .Expandcollection .collectionListInner span {
+        color: white;
+        position: absolute;
+        top: -13px;
+        right: -10px;
+        background-color: var(--fontColor);
+        padding: 0px 5px;
+        border-radius: 10px;
+        font-size: var(--extraSmallFont);
+    }
+
+    .collection-list .collectionListInner .saleBackground,
+    .Expandcollection .collectionListInner .saleBackground {
+        background-color: #ffa800;
+    }
+
+    .heartIconDiv,
+    .cartIconDiv {
+        position: relative;
+    }
+
+    .heartIconDiv .counterSpanContainer,
+    .cartIconDiv .counterSpanContainer {
+        position: absolute;
+        background-color: black;
+        padding: 1px 5px;
+        color: white;
+        top: -13px;
+        border-radius: 50%;
+        font-size: var(--extraSmallFont);
+        right: 0;
+    }
+
+    .searchIconDiv,
+    .accountIconDiv,
+    .heartIconDiv,
+    .cartIconDiv {
+        cursor: pointer;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Styles for extra small devices */
 }
