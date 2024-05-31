@@ -11,62 +11,60 @@ import Modal from 'react-modal';
 import { MdFavoriteBorder } from "react-icons/md";
 import { SiTicktick } from "react-icons/si";
 import { RiCloseLine } from "react-icons/ri";
+export const newArrivalsData = [
+
+    {
+        img: product,
+        label: 'BL Fabric',
+        productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
+        price: `${10, 999}`,
+        discountPrice: `${3, 699.00}`,
+        productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
+    },
+    {
+        img: product,
+        label: 'BL Fabric',
+        productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
+        price: `${10, 999}`,
+        discountPrice: `${3, 699.00}`,
+        productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
+    }
+    ,
+    {
+        img: product,
+        label: 'BL Fabric',
+        productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
+        price: `${10, 999}`,
+        discountPrice: `${3, 699.00}`,
+        productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
+    },
+    {
+        img: product,
+        label: 'BL Fabric',
+        productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
+        price: `${10, 999}`,
+        discountPrice: `${3, 699.00}`,
+        productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
+    },
+    {
+        img: product,
+        label: 'BL Fabric',
+        productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
+        price: `${10, 999}`,
+        discountPrice: `${3, 699.00}`,
+        productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
+    },
+    {
+        img: product,
+        label: 'BL Fabric',
+        productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
+        price: `${10, 999}`,
+        discountPrice: `${3, 699.00}`,
+        productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
+    }
+]
 
 const NewArrivals = () => {
-
-
-    const newArrivalsData = [
-
-        {
-            img: product,
-            label: 'BL Fabric',
-            productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
-            price: `${10, 999}`,
-            discountPrice: `${3, 699.00}`,
-            productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
-        },
-        {
-            img: product,
-            label: 'BL Fabric',
-            productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
-            price: `${10, 999}`,
-            discountPrice: `${3, 699.00}`,
-            productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
-        }
-        ,
-        {
-            img: product,
-            label: 'BL Fabric',
-            productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
-            price: `${10, 999}`,
-            discountPrice: `${3, 699.00}`,
-            productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
-        },
-        {
-            img: product,
-            label: 'BL Fabric',
-            productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
-            price: `${10, 999}`,
-            discountPrice: `${3, 699.00}`,
-            productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
-        },
-        {
-            img: product,
-            label: 'BL Fabric',
-            productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
-            price: `${10, 999}`,
-            discountPrice: `${3, 699.00}`,
-            productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
-        },
-        {
-            img: product,
-            label: 'BL Fabric',
-            productName: 'Shadding Purple color Sequence & Thread Embroidery work Designer Lehenga Choli for Any Function BL1400',
-            price: `${10, 999}`,
-            discountPrice: `${3, 699.00}`,
-            productDesc: 'Product code : BL1400Lehenga : Shadding Faux Georgette Fabric With Sequence Thread WorkInner : American crept in lehengacholi : Faux Georgette Fabric With Thread Work (unstitch)Duppta : Faux Georgette Fabric...'
-        }
-    ]
 
     const [loader, setLoader] = useState(true);
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -132,10 +130,10 @@ const NewArrivals = () => {
                     </div>
                     <div className="filterBox">
                         <div className="innerFilterBox" onClick={() => gridHandler('grid')}>
-                            <MdOutlineMenu size={20} />
+                            <MdOutlineMenu size={20} fill='lime' />
                         </div>
                         <div className="innerFilterBox" onClick={() => gridHandler('twoGrid')} >
-                            <CgMenuGridR size={20} />
+                            <CgMenuGridR size={20} fill='red' />
                         </div>
                         <div className="innerFilterBox" onClick={() => gridHandler('threeGrid')}>
                             <CgDisplayGrid size={20} />
