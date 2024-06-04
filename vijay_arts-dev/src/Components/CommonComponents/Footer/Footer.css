@@ -255,3 +255,30 @@
     width: 85%;
   }
 }
+
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .tabBar-container {
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tabBar-container .tab1 p {
+    font-size: 9pt;
+    font-family: var(--fontFamily);
+  }
+
+  .tab1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1%;
+  }
+
+}
