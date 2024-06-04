@@ -11,11 +11,7 @@ import gold_transparency from "../../../assets/svg/gold_transparency.svg"
 import top_stories from "../../../assets/svg/top_stories.svg"
 import top_trending from "../../../assets/svg/top_trending.svg"
 import v_reviews from "../../../assets/svg/v_reviews.svg"
-import { AiOutlineAppstore } from "react-icons/ai";
-import { CiHeart } from "react-icons/ci";
-import { CiShoppingCart } from "react-icons/ci";
-import { FiUser } from "react-icons/fi";
-import { CiSearch } from "react-icons/ci";
+
 
 const Footer = () => {
     const utility = [
@@ -148,28 +144,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="tabBar-container">
-                <div className="tab1">
-                    <AiOutlineAppstore size={20} />
-                    <p>Shop</p>
-                </div>
-                <div className="tab1">
-                    <CiHeart size={20} />
-                    <p>Wishlist</p>
-                </div>
-                <div className="tab1">
-                    <CiShoppingCart size={20} />
-                    <p>Cart</p>
-                </div>
-                <div className="tab1">
-                    <FiUser size={20} />
-                    <p>Account</p>
-                </div>
-                <div className="tab1">
-                    <CiSearch size={20} />
-                    <p>Search</p>
-                </div>
-            </div>
+           
         </div>
     )
 }
