@@ -49,7 +49,7 @@ const Header = () => {
                 <div className="logosection">
                     <img src={logo} alt="error" />
                 </div>
-                <div className={expandSidebar ? 'Expandcollection-list' : "collection-list"}>
+                <div className={expandSidebar ? 'Expandcollection-list' : "collection-list"} >
                     <div className="manu-top-bar">
                         <div className="left-side-menu">
                             <p>MENU</p>

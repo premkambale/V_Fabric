@@ -16,8 +16,8 @@ const MainRoutes = () => {
         <>
             <Header />
             <Routes>
-                <Route path='/' element={<Dashboard />} />
-                <Route path='/dashboard' element={<Dashboard />} />
+                {/* <Route path='/' element={<Dashboard />} /> */}
+                {/* <Route path='/dashboard' element={<Dashboard />} /> */}
                 <Route path='/collections' element={<Collection />} />
                 <Route path='/newArrivals' element={<NewArrivals />} />
                 <Route path='/hotselling' element={<HotSelling />} />
