@@ -11,13 +11,14 @@ import NewArrivals from '../UserComponents/Dashboard/Collections/NewArrivals/New
 import HotSelling from '../UserComponents/Dashboard/Collections/HotSellings/HotSelling'
 import LehengaCholi from '../UserComponents/Dashboard/Collections/LehengaCholi/LehengaCholi'
 import Sale from '../UserComponents/Dashboard/Collections/Sale/Sale'
+import TabBar from '../CommonComponents/Footer/TabBar'
 const MainRoutes = () => {
     return (
         <>
             <Header />
             <Routes>
-                {/* <Route path='/' element={<Dashboard />} /> */}
-                {/* <Route path='/dashboard' element={<Dashboard />} /> */}
+                <Route path='/' element={<Dashboard />} />
+                <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/collections' element={<Collection />} />
                 <Route path='/newArrivals' element={<NewArrivals />} />
                 <Route path='/hotselling' element={<HotSelling />} />
@@ -28,6 +29,7 @@ const MainRoutes = () => {
                 <Route path='/profile' element={<Profile />} />
             </Routes>
             <Footer />
+            <TabBar />
         </>
     )
 }
