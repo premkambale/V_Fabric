@@ -202,7 +202,7 @@ const NewArrivals = () => {
                                                         <span className='productLabel'>{item?.label}</span>
                                                         <p>{item?.productName}</p>
                                                         <div className='priceBox'>
-                                                            <span className=''>MRP. {item.price}</span>
+                                                            <span className='disblePrice'>MRP. {item.price}</span>
                                                             <span className='discountPrice'>Rs. {item.discountPrice}</span>
                                                         </div>
                                                     </div>
