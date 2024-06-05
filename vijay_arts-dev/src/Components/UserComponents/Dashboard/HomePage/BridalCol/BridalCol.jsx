@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./BridalCol.css"
+import { CiHeart } from 'react-icons/ci';
+import { LuEye } from 'react-icons/lu';
+import { IoCartOutline } from 'react-icons/io5';
 
 const BridalCol = () => {
+
+    const [hoverView, setHoverView] = useState(false);
+    const [cartView, setCartView] = useState(false)
+
     const products = [
         {
             id: 1,
@@ -59,8 +66,24 @@ const BridalCol = () => {
                             />
                             <div className="discount-badge">-{product.discount}%</div>
                             <div className="overlay">
-                                <button className="overlay-button">Quick view</button>
-                                <button className="overlay-button">Add to cart</button>
+                                <div className="wishListBadge">
+                                    <CiHeart />
+                                </div>
+
+                                <button data-aos="fade-down"
+                                    className="overlay-button"
+                                    onMouseEnter={() => setHoverView(true)}
+                                    onMouseLeave={() => setHoverView(false)}
+                                >
+                                    {hoverView ? <span className='iconSpan'><LuEye /></span> : "Quick view"}
+                                </button>
+                                <button data-aos="fade-down"
+                                    className="overlay-button"
+                                    onMouseEnter={() => setCartView(true)}
+                                    onMouseLeave={() => setCartView(false)}
+                                >
+                                    {cartView ? <span className='iconSpan'><IoCartOutline /></span> : "Add to cart"}
+                                </button>
                             </div>
                         </div>
                         <div className="product-details">

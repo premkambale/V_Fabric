@@ -12,6 +12,7 @@ import HotSelling from '../UserComponents/Dashboard/Collections/HotSellings/HotS
 import LehengaCholi from '../UserComponents/Dashboard/Collections/LehengaCholi/LehengaCholi'
 import Sale from '../UserComponents/Dashboard/Collections/Sale/Sale'
 import TabBar from '../CommonComponents/Footer/TabBar'
+import ViewProductDetails from '../UserComponents/ViewProductDetails/ViewProductDetails'
 const MainRoutes = () => {
     return (
         <>
@@ -27,6 +28,7 @@ const MainRoutes = () => {
                 <Route path='/wishlist' element={<Wishlist />} />
                 <Route path='/cart' element={<Carts />} />
                 <Route path='/profile' element={<Profile />} />
+                <Route path="/ViewProductDetails" element={<ViewProductDetails />} />
             </Routes>
             <Footer />
             <TabBar />

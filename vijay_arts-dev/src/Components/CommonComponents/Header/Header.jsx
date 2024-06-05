@@ -31,6 +31,10 @@ const Header = () => {
         setIsActiveSearch(true)
     }
 
+    const handleLogo = () => {
+        navigate("/")
+    }
+
     return (
         <>
 
@@ -54,7 +58,7 @@ const Header = () => {
                     <div className='menuBar' onClick={expandMenuBar}>
                         <CgMenuLeft size={25} />
                     </div>
-                    <div className="logosection">
+                    <div onClick={handleLogo} className="logosection">
                         <img src={logo} alt="error" />
                     </div>
                     <div className={expandSidebar ? 'Expandcollection-list' : "collection-list"} >

@@ -17,10 +17,12 @@ const Slider = () => {
 
     return (
         <div className='slider_MainDiv'>
-            <div className='slider_images'>
-                <div className='image_container'>
-                    <img className='slider_image' src={images[currentIndex]} alt='Slider' />
-                </div>
+            <div className='slider_images' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                {images.map((image, index) => (
+                    <div className='image_container' key={index}>
+                        <img className='slider_image' src={image} alt={`Slide ${index}`} />
+                    </div>
+                ))}
             </div>
             <button className='slider_button prev' onClick={prevImage}>❮</button>
             <button className='slider_button next' onClick={nextImage}>❯</button>
