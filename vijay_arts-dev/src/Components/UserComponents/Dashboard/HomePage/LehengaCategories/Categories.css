@@ -1,110 +1,113 @@
-.cat_mainDiv {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.catSubDivs {
+.gallery {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.catCard {
-    width: 20rem;
-    height: 25rem;
-    border-radius: 20px;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     overflow: hidden;
-    position: relative; 
-}
-
-.catImage {
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: all ease-in-out 0.3s;
-}
-
-.catImage:hover {
-    transform: scale(1.04);
-}
-
-.catNavigateButton {
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+  }
+  
+  .label {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5); 
-}
-
-.cat_button {
-    width: 90%;
-    padding: 12px;
-    margin: 10px auto;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color: white;
-    transition: all ease-in-out 0.3s;
+  }
+  
+  .view-details {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f04;
+    color: #fff;
     border: none;
-    text-align: center;
-}
-
-.cat_button:hover {
-    background-color: #171717;
-    color: white;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .cat_mainDiv {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        height: auto;
-        gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-details:hover {
+    background-color: #d03;
+    transform: scale(1.1);
+  }
+  
+  /* Large Devices (Laptops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .gallery-item {
+      width: 45%;
     }
-
-    .catSubDivs:nth-child(1) {
-        grid-column: 1 / 3;
+  }
+  
+  /* Medium Devices (Tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .gallery-item {
+      width: 70%;
     }
-
-    .catCard {
-        width: 15rem;
-        height: 20rem;
+  }
+  
+  /* Small Devices (Landscape Phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
     }
-
-    .catNavigateButton {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
+  
+    .gallery-item:nth-child(1) {
+      grid-column: 1 / -1;
+      width: 100%;
     }
-}
-
-@media (max-width: 480px) {
-    .cat_mainDiv {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        height: auto;
+  
+    .gallery-item {
+      width: 100%;
     }
-
-    .catCard {
-        width: 12rem;
-        height: 18rem;
+  }
+  
+  /* Extra Small Devices (Portrait Phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
     }
-
-    .catNavigateButton {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
+  
+    .gallery-item:nth-child(1) {
+      grid-column: 1 / -1;
+      width: 100%;
     }
-}
+  
+    .gallery-item {
+      width: 100%;
+    }
+  }
+  

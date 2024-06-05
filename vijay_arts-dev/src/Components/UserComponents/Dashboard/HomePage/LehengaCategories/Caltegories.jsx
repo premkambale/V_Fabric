@@ -3,40 +3,20 @@ import "./Categories.css"
 import lehenga from "../../../../../assets/Images/lehenga.jpg"
 const Caltegories = () => {
     return (
-        <div class='cat_mainDiv'>
-        <div class="catSubDivs">
-            <div class="catCard">
-                <img class='catImage' src={lehenga} alt="" />
-                <div class="catNavigateButton">
-                    <button class='cat_button'>
-                        Bridal Lehenga
-                    </button>
-                </div>
+        <div className="gallery">
+            <div className="gallery-item">
+                <img src={lehenga} alt="Designer Lehenga" className="gallery-img" />
+                <div className="label">Designer Lehenga</div>
+            </div>
+            <div className="gallery-item">
+                <img src={lehenga} alt="Bridal Lehenga" className="gallery-img" />
+                <div className="label">Bridal Lehenga</div>
+            </div>
+            <div className="gallery-item">
+                <img src={lehenga} alt="Lehenga Choli" className="gallery-img" />
+                <div className="label">Lehenga Choli</div>
             </div>
         </div>
-        <div class="catSubDivs">
-            <div class="catCard">
-                <img class='catImage' src={lehenga} alt="" />
-                <div class="catNavigateButton">
-                    <button class='cat_button'>
-                        Bridal Lehenga
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="catSubDivs">
-            <div class="catCard">
-                <img class='catImage' src={lehenga} alt="" />
-                <div class="catNavigateButton">
-                    <button class='cat_button'>
-                        Bridal Lehenga
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
     )
 }
 

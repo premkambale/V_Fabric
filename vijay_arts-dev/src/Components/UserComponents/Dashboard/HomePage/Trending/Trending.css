@@ -60,6 +60,27 @@
     object-fit: cover;
 }
 
+.wishListBadge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishListBadge:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+
+
+
 .discount-badge {
     position: absolute;
     top: 10px;
@@ -100,6 +121,17 @@
     font-size: 14px;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.overlay-button:hover {
+    background-color: #030637;
+    color: white;
+    width: 7rem;
+}
+
+.iconSpan {
+    transition: all ease-in-out 0.6s;
 }
 
 .product-details {
@@ -179,5 +211,41 @@
     .trendingGrid {
         grid-template-columns: repeat(2, 1fr);
         padding: 10px;
+    }
+
+    .overlay {
+        opacity: 1;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 10px;
+        background: none;
+    }
+
+    .overlay-button {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin: 2px;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .overlay-button span {
+        display: none;
+    }
+
+    .overlay-button:hover {
+        background-color: white;
+        color: black;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .product-image-container:hover .overlay {
+        opacity: 1;
     }
 }
